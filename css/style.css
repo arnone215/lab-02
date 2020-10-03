@@ -1,9 +1,46 @@
 body {
-    background-color: aqua;
+    background-color: grey;
 }
 
 h1 {
+    background-color: khaki;
+    color: black;
     margin: 20px;
     font-size: large;
     font-weight: bold;
 }
+
+#zero-paragraph {
+    background-color: darkcyan;
+    color: red;
+}
+
+#first-paragraph {
+    background-color: blue;
+    color: aliceblue;
+}
+
+#second-paragraph {
+    background-color: greenyellow;
+    color: blue;
+}
+
+#third-paragraph {
+    background-color: indigo;
+    color: ivory;
+}
+
+#fourth-paragraph {
+    background-color: black;
+    color: red;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    margin: auto;
+    width: 200px;
+}
+
+
+/* style='background-color: blue; color: aliceblue; ' */
