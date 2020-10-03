@@ -2,7 +2,7 @@
 
 var userName = prompt('What is your name?');
 console.log('Hi' + userName);
-alert('Hi there ' + userName + '! How is your day today?')
+alert('Hi there ' + userName + '! I hope your day is going well!')
 
 var homeLocation = prompt('Am I from Seattle?').toLowerCase();
 
