@@ -7,6 +7,7 @@ var guessesRight = 0;
 console.log('Hi' + userName);
 alert('Hi there ' + userName + '! I hope your day is going well!')
 
+
 // //question two
 
 var homeLocation = prompt('Am I from Seattle?').toLowerCase();
@@ -60,18 +61,20 @@ console.log('I like cars too' + carFan + ' my favorite car is a ferrari.');
 
 // question six number game... REMEMBER TO BREAK THE WHILE LOOP
 
-while (true) {
+outerloop: while (true) {
     var attempt = 0;
-    var randomNumber = (Math.floor)(Math.random() * 10 + 1)
+    // var randomNumber = (Math.floor)(Math.random() * 10 + 1)
+    var randomNumber = 5
     var userGuess
+    var correctAnswer = (Math.floor)(Math.random)
 
     while (attempt < 4) {
-        var userGuess = prompt('Guess a number between 1 and 10');
-
+        var userGuess = parseInt(prompt('Guess a number between 1 and 10'));
+        console.log(typeof userGuess)
         if (userGuess === randomNumber) {
             alert('You guessed the right number. Winner!');
-            guessesRight++
-            break;
+            guessesRight++;
+            break outerloop;
 
         } else if (userGuess > randomNumber) {
             alert('You guessed too high');
@@ -79,9 +82,9 @@ while (true) {
         } else if (userGuess < randomNumber) {
             alert('Your guess is too low');
             attempt++;
-        } else {
-            alert('Please enter a number!');
-        }
+        } //else {
+        //     alert('You guessed right!');
+        // }
 
         if (attempt === 4 && userGuess !== randomNumber) {
             alert('the right answer was: ' + randomNumber + ' You did not win this time, try again next time!');
