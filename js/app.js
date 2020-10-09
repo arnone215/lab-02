@@ -1,14 +1,16 @@
 'use strict'
 
 //question one
-
+function questionOne(){
 var userName = prompt('What is your name?');
 var guessesRight = 0;
 console.log('Hi' + userName);
 alert('Hi there ' + userName + '! I hope your day is going well!')
+questionOne();
+}
 
 // //question two
-
+function questionTwo(){
 var homeLocation = prompt('Am I from Seattle?').toLowerCase();
 
 if (homeLocation === 'yes' || homeLocation === 'y') {
@@ -16,12 +18,13 @@ if (homeLocation === 'yes' || homeLocation === 'y') {
     alert('Yes I am from Seattle');
     guessesRight++
 }
-
+questionTwo
+}
 // // console.log('Nice, ' + homeLocation + ' is great!');
 
 
 // // question three
-
+function questionThree(){
 var whyCoding = prompt('Have I worked in tech before?').toLowerCase();
 
 
@@ -29,12 +32,14 @@ if (whyCoding === 'no' || whyCoding === 'n') {
     // console.log('No I have not worked in tech before');
     alert('No I have not worked in tech before');
 }
-
+questionThree();
+}
 // console.log('That is great that ' + whyCoding + 'is a goal of yours! ');
 
 // // question four
-
+function questionFour(){
 var milVeteran = prompt('Am I a military veteran?').toLowerCase();
+
 
 
 if (milVeteran === 'yes' || milVeteran === 'y') {
@@ -42,12 +47,13 @@ if (milVeteran === 'yes' || milVeteran === 'y') {
     alert('Yes, I am a veteran');
     guessesRight++
 }
-
+questionFour();
+} 
 
 // console.log('Woah! I hear that ' + milVeteran + ' is a amazing!');
 
 // // question five
-
+function questionFive(){
 var carFan = prompt('Do I like cars?').toLowerCase();
 
 
@@ -58,9 +64,11 @@ if (carFan === 'yes' || carFan === 'y') {
 }
 console.log('I like cars too' + carFan + ' my favorite car is a ferrari.');
 
+questionFive();
+}
 // question six number game... REMEMBER TO BREAK THE WHILE LOOP
-
-while (true) {
+function qustionSix(){
+outerloop: while (true) {
     var attempt = 0;
     var randomNumber = (Math.floor)(Math.random() * 10 + 1)
     var userGuess
@@ -71,7 +79,7 @@ while (true) {
         if (userGuess === randomNumber) {
             alert('You guessed the right number. Winner!');
             guessesRight++
-            break;
+            break outerloop; 
 
         } else if (userGuess > randomNumber) {
             alert('You guessed too high');
@@ -92,9 +100,10 @@ while (true) {
         break;
     }
 }
-
+questionSix();
+}
 // question seven  favorite month
-
+function questionSeven(){
 var calMonths = ['february', 'october', 'december'];
 var attemptsLeft = 6;
 var guessMonth = prompt('What are three of my favorite months?');
@@ -115,7 +124,10 @@ while (attemptsLeft > 0 && !correctMonth) {
     if (attemptsLeft === 0 && !correctMonth) {
         alert('You had SIX TRIES and couldn\'t guess THREE out of 12\?')
     }
-
-
+    questionSeven();
 }
-alert('You\'ve gotten ' + guessesRight + ' correct!')
+    
+
+
+    alert('You\'ve gotten ' + guessesRight + ' correct!')
+}
