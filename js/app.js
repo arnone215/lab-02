@@ -6,7 +6,9 @@ var userName = prompt('What is your name?');
 var guessesRight = 0;
 console.log('Hi' + userName);
 alert('Hi there ' + userName + '! I hope your day is going well!')
+questionOne();
 }
+
 // //question two
 function questionTwo(){
 var homeLocation = prompt('Am I from Seattle?').toLowerCase();
