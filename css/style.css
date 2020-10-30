@@ -11,6 +11,7 @@ h1 {
 }
 
 #zero-paragraph {
+    margin: 20px;
     background-color: darkcyan;
     color: red;
 }
@@ -43,4 +44,5 @@ footer {
 }
 
 
-/* style='background-color: blue; color: aliceblue; ' */
+
+
