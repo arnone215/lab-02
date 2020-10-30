@@ -5,38 +5,50 @@ body {
 h1 {
     background-color: khaki;
     color: black;
-    margin: 20px;
+    margin: auto;
+    border: solid black 5px;
     font-size: large;
     font-weight: bold;
+    text-align: center;
+    width: 100px;
+    
+
 }
 
 #zero-paragraph {
+    border: solid black 5px;
     margin: 20px;
     background-color: darkcyan;
     color: red;
+    font-weight: bold;
 }
 
 #first-paragraph {
+    margin: 20px;
     background-color: blue;
     color: aliceblue;
 }
 
 #second-paragraph {
+    margin: 20px;
     background-color: greenyellow;
     color: blue;
 }
 
 #third-paragraph {
+    margin: 20px;
     background-color: indigo;
     color: ivory;
 }
 
 #fourth-paragraph {
+    margin: 20px;
     background-color: black;
     color: red;
 }
 
 footer {
+    margin: 20px;
     background-color: whitesmoke;
     color: black;
     margin: auto;
